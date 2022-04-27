@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.page-wrapper {
+    display: grid;
+    line-height: 1.5;
+}
+
+.intro {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1538991383142-36c4edeaffde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80');
+}
+
+
+header h1 {
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Water Brush', cursive;
+    display: grid;
+}
+
+
+
+header h2 {
+    display: block;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    border-left: .3rem solid olive;
+    font-size: 3em;
+    font-family: 'Water Brush', cursive;
+    
+}
+
+.summary, .preamble {
+    font-family: 'Quicksand', sans-serif;
+    color: #fffff1;
+    margin: 5px;
+    background-color: #fffaaa20;
+    border-radius: 3px;
+    border-left: 2px solid olivedrab;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    text-align: justify;
+}
+
+.preamble {
+    display: block;
+}
+
+#zen-supporting {
+    background-color: rgba(244, 50, 244, 0.3);
+    padding: 2rem;
+}
+.explanation, .participation, .benefits, .requirements {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    
+}
+
+.summary {
+    background-color: #fffaaa20;
+}
+
+.wrapper {
+    display: none;
+    
+    
+}
+
+@media(min-width: 500px) {
+
+    .intro {
+        font-size: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 90vh;
+        background-image: url('https://images.unsplash.com/photo-1538991383142-36c4edeaffde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80');
+    }
+    
+    .main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .requirements {
+        grid-column: span 2;
+    }
+
+    footer {
+        display: grid;
+        padding-left: 2rem;
+        grid-gap: .25rem;
+    
+    }
+
+    footer a {
+        text-align: center;
+        background-color: rgb(214, 199, 228);
+        border-radius: 6px;
+    }
+
+    .wrapper {
+        display: flex;
+        font-weight: 600;
+        text-shadow: 2px 2px rgb(150, 134, 134);
+        
+        
+    }
+
+    .sidebar {
+        font-family: 'Quicksand', sans-serif;
+        color: #fffff1;
+        width: 40%;
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        
+        
+    }
+
+    .sidebar a {
+        text-decoration: none;
+        color: #fffff1;
+    }
+
+    .sidebar li {
+        list-style: none;
+    }
+}
